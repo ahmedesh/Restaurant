@@ -1,0 +1,419 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+}
+
+/* ****************** Start Nav ******************* */
+nav{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0 !important;
+    background: rgba(0, 0, 0, .5);
+}
+.mr-auto, .mx-auto {
+    margin: auto!important;
+}
+nav .logo{
+    float: left;
+    width: 20%;
+}
+nav .logo img{
+    width: 100%;
+    height: 100%;
+}
+nav .btn-danger:hover{
+background-color: transparent;
+transition: all.5s ease-in-out;
+}
+nav .btn{
+    border: 2px solid transparent;
+}
+nav li a:hover{
+    color: red;
+}
+nav .botn{
+    color: #fff;
+    background-color: #dc3545;
+    padding: 10px;
+    text-decoration: none;
+}
+nav .botn:hover{
+    color: #fff;
+    background-color: transparent;
+}
+nav .trainagle {
+    background: url(../images/triangle_bg_black.png) repeat-x;
+    background-size: 26px 10px;
+    opacity: .5;    /*اديته نفس درجه الباكجراوند فالنافبار فوق */
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;
+}
+
+/* ****************** End Nav ******************* */
+
+/* ****************** Start Slider ******************* */
+.slider{
+    background-image: url(../images/slider_1_1920_1200.jpg);
+    /* height: 800px;   height:100vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+.slider .text{
+   /* width: 100%;
+    position: absolute;
+    top: 30%;
+   left: 0;
+    text-align: center;
+    color: #fff; */
+}
+.text h5{
+    font-size: 18.2px;
+    font-weight: 700;
+   
+}
+.text h1{
+    font-size: 7.5em;
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+    margin: 0.37em 0;
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+}
+.botn{
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #EF0031;
+    color: #fff;
+    transition: all.6s ease-in-out;
+    position: relative;
+    border: 2px solid #dc3545;
+    margin: auto;
+}
+ .botn:hover{
+    transform: translate(0,-4px);
+    background-color: #fff;
+    color: #000;
+    }
+
+     #scroll3 , #scroll4 , #scroll5 , #scroll6 {
+        position: absolute;
+        bottom:30px;
+        left:50%;
+        cursor: pointer;
+        font-size: 30px;
+        color: #EF0031;
+        border-radius: 50%;
+        /* display: none; */
+    }
+/* ****************** End Slider ******************* */
+
+/* ****************** Start Our-Story ******************* */
+.our-story{
+    padding: 80px 0;
+    position: relative;
+}
+.our-story .trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+        /*اديته نفس درجه الباكجراوند فالنافبار فوق */
+        /* opacity: .5; */
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+}
+.row div{
+    color: #555;
+}
+.our-story img{
+    width: 40px;
+}
+.our-story .img1{
+    background: url(../images/story_bg_1.png) no-repeat center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 0;
+    width: 20%;
+    height: auto;
+}
+.our-story .img2{
+    background: url(../images/story_bg_2.png) ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 0;
+    width: 20%;
+    height: auto;
+}
+@media(min-width:480px) and (max-width:991px){
+    .our-story .row div{text-align: center!important;}
+}
+
+.our-story .rotate-trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    background-size: 26px 10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;
+}
+
+/* ****************** End Our-Story ******************* */
+
+/* ****************** Start Best-Seller ******************* */
+.best-seller{
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/sellers-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 50px 0;
+    position: relative;
+}
+
+.best-seller .img-apple{
+    width: 40px;
+}
+.best-seller h2{
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 40px 0;
+    font-style: italic;
+}
+.first{
+    padding: 0 0 30px 0;
+}
+
+.best-seller .photo{
+    padding-left: 30px;
+    text-align: center;
+}
+.best-seller .photo .primary{
+    background-color: #F1002A;
+}
+.best-seller .photo .ribbon{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    padding: 0px 10px 0px 10px;
+    height: 25px;
+}
+
+@media(min-width:480px) and (max-width:991px){
+    .best-seller .photo .ribbon{   
+     left: 3%;
+  }
+  }
+
+.best-seller .photo .ribbon::after{
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    right: -18px;
+    top: 0;
+    bottom: 0;
+}
+.best-seller .photo .primary::after {
+    border-color: #ef0031 transparent #ef0031 #ef0031;
+}
+.best-seller .photo .secondary{
+    background-color: #1F8330;
+}
+.best-seller .photo .secondary::after {
+    border-color: #1F8330 transparent #1F8330 #1F8330;
+}
+.ribbon h6{
+    color: #fff;
+    line-height: 20px;
+    font-size: 13px;
+}
+.best-seller .photo .thirdy{
+    background-color: #fff;
+}
+.best-seller .photo .thirdy::after {
+    border-color: #fff transparent #fff #fff;
+}
+.best-seller .photo .thirdy h6{
+    color: #000;
+}
+.best-seller .photo span{
+    color: #fff;
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+}
+.best-seller .photo button{
+    color: #EF0031;
+    border: 1px solid #EF0031;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px 25px ;
+    margin: 20px 0;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+}
+.photo button:hover{
+    background-color: #EF0031;
+    color: #fff;
+}
+/* ****************** End Best-Seller ******************* */
+
+/* ****************** Start Our-Menu ******************* */
+.our-menue{
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+.our-menue .trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+}
+.our-menue h2{
+    color: #333;
+    font-style: italic;
+}
+.our-menue li{
+    margin: 5px 0;
+    cursor: pointer;
+}
+.our-menue li.active{
+    background-color: #EF0031;
+    border-radius: 3px 3px 0 0;
+}
+.our-menue li:hover{
+    background-color: #EF0031;
+    color: #fff;
+}
+.our-menue li.active {
+    color: #fff;
+}
+.our-menue li {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 25px;
+    transition: all .8s ease-in-out;
+}
+@media(min-width:480px) and (max-width:527px){
+    .our-menue li{   
+        padding: 5px 15px;
+  }
+  }
+hr{
+    background-color: #333;
+    height: 1px;
+}
+.our-menue .row img{
+    width: 100px;
+}
+.our-menue .right p{
+    color: #555;
+}
+.our-menue .image , .right{
+    padding: 15px 10px;
+}
+.our-menue .image{
+    width: 20%;
+}
+.our-menue .right{
+    width: 80%;
+}
+.right h5 , p{
+    text-align: left;
+}
+.our-menue .rotate-trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    background-size: 26px 10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;
+}
+/* ****************** End Our-Menu ******************* */
+
+/* ****************** Start Concat ******************* */
+footer{
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/footer_1600x800.jpg);
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    text-align: center;
+}
+footer .container{
+    position: relative;
+}
+footer .nn{
+    position: inherit;
+    left: -500px;
+}
+
+footer b{
+    color: #37B143;
+    text-decoration: underline;
+}
+footer a ,
+footer span{
+    color: #fff;
+    display: block;
+}
+footer a{
+    transition: all .5s ease-in-out;
+}
+footer a:hover{
+    color: #dc3545;
+}
+footer ul li{
+    display: inline-block;
+    padding-left: 10px;
+}
+/*#scroll i{
+    cursor: pointer;
+    font-size: 30px;
+    color: #cfcccc;
+    border-radius: 50%;
+      position: fixed;
+         bottom: 0;
+         right: 0;
+}*/
+
+#scroll2 i{
+    cursor: pointer;
+    font-size: 50px;
+    /* color: #cfcccc; */
+    /* color:rgb(84, 84, 173); */
+    color: #fff;
+    background-color: rgb(65, 62, 62);
+    border-radius: 50%;
+      position: fixed;
+         top:50%;
+         left:0;
+         display: none;
+}
+/* ****************** End Concat ******************* */

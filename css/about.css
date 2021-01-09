@@ -1,0 +1,248 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin: auto;
+}
+
+
+
+/* ****************** Start Slider ******************* */
+.slider{
+    background-image: url(../images/Pizza2.jpg);
+    height: 400px;   /*height:100vh;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+.slider .text{
+    width: 100%; 
+    position: absolute;
+    left: 0;
+    color: #fff; 
+}
+.slider .text h5{
+    font-size: 18.2px;
+    font-weight: 700; 
+}
+.slider .text h1{
+    font-size: 4em;
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+    margin: 0.37em 0;
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+}
+      
+@media(min-width:480px) and (max-width:991px) {
+    .slider .text h1 {
+        font-size: 2.5em !important; 
+    }
+}
+/* ****************** End Slider ******************* */
+
+/* ****************** Start our-story ******************* */
+.our-story{
+    padding: 60px 0;
+    position: relative;
+}
+.our-story .photo img{
+    width:100%;
+    height:300px;
+}
+.our-story .content{
+    padding:30px 0 ;
+}
+.our-story  h2{
+     font-family: 'https://fonts.google.com/specimen/Dancing+Script?vfonly=true'; 
+    font-style: italic;
+    font-weight:bold;
+}
+.our-story  h6{
+    color:#333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+.our-story .text{
+    color:#555;
+}
+.btn{
+    display: inline-block;
+}
+.botn{
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: #fff;
+    transition: all.6s ease-in-out;
+    position: relative;
+    margin: auto;
+    font-size: 11px;
+    letter-spacing: 1px;
+    width: 170px;
+    height: 45px;
+    cursor: pointer;
+}
+.botn-one{
+    background-color: #EF0031;
+    border: 2px solid #dc3545;
+}
+.bton-two{
+    background-color: #118522;
+    border: 2px solid #118522;
+}
+ .botn:hover{
+    transform: translate(0,-4px);
+    background-color: #fff;
+    color: #000;
+    }
+    .our-story .trainagle {
+        background: url(../images/triangle_bg.png) repeat-x;
+        background-size: 26px 10px;
+            /*اديته نفس درجه الباكجراوند فالنافبار فوق */
+            /* opacity: .5; */
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        height: 10px;
+    }
+    .our-story .rotate-trainagle {
+        background: url(../images/triangle_bg.png) repeat-x;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        background-size: 26px 10px;
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: 10px;
+    }
+     /* ****************** End our-story ******************* */
+
+    /* ****************** Start Best-Seller ******************* */
+.best-seller{
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/sellers-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 60px 0;
+    color: #fff;
+}
+.best-seller h2{
+    font-style: italic;
+}
+.best-seller .carousel-inner img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.best-seller .carousel-inner .carousel-item h4{
+    font-size: 18px;
+    color: rgb(226, 221, 221);
+    padding: 15px 0;
+}
+.best-seller .carousel-inner .carousel-item .color-ash{
+    color: #aaa;
+}
+.best-seller .carousel-inner .carousel-item h6{
+    font-size: 13px;
+    padding: 10px 0;
+}
+.color-primary {
+    color: #EF0031;
+}
+.best-seller .carousel-indicators {
+    position: relative;
+    margin: 30px 0;
+}
+.best-seller .carousel-indicators li{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.best-seller .trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+        /*اديته نفس درجه الباكجراوند فالنافبار فوق */
+        /* opacity: .5; */
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+}
+
+ /* ****************** End Best-Seller ******************* */
+
+ /* ****************** Start Counter ******************* */
+.counter{
+    padding: 70px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.counter .container {
+position: relative;
+}
+.counter .tt{
+position: inherit;
+top: 250px;
+}
+/* ====================  اللي فوق تساوي اللي تحت ممكن نعملها بالجيكويري وممكن نعملها بال سس=========================== */
+/* .counter .tt{
+    animation: moving 5s ;
+}
+@keyframes moving{
+    from{
+        position: inherit;
+        top: 250px;
+    }
+    to{
+        position: inherit;
+        top: 0;
+    }
+} */
+
+.counter i{
+    font-size: 30px;
+    color: #EF0031;
+}
+.counter span{
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+}
+.counter h5{
+    color: #666666;
+    font-size: 18px;
+}
+.counter .trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+        /*اديته نفس درجه الباكجراوند فالنافبار فوق */
+        /* opacity: .5; */
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+}
+.counter .rotate-trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    background-size: 26px 10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;
+}
+ /* ****************** End Counter ******************* */

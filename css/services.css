@@ -1,0 +1,255 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin: auto;
+}
+
+
+
+/* ****************** Start Slider ******************* */
+.slider{
+    background-image: linear-gradient(rgba(0,0,0,.6) , rgba(0,0,0,.6)) , url(../images/slider_3_1920_600.jpg);
+    /* height: 500px;   height:100vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    /* padding: 100px 0; */
+}
+.slider .text{
+    width: 100%; 
+    position: absolute;
+    left: 0;
+    color: #fff; 
+}
+.slider .text h5{
+    font-size: 18.2px;
+    font-weight: 700; 
+}
+.slider .text h1{
+    font-size: 4em;
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+    margin: 0.37em 0;
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+}
+      
+/* ****************** End Slider ******************* */
+
+/* ****************** Start Our-Menu ******************* */
+.our-menue{
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.first{
+    padding: 0 0 30px 0;
+}
+.our-menue .photo{
+    padding-left: 30px;
+    text-align: center;
+}
+.our-menue .first img{
+    width:150px;
+    height:150px;
+}
+.our-menue .photo .primary{
+    background-color: #F1002A;
+}
+.our-menue .photo .ribbon{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    padding: 0px 5px 0px 5px;
+    height: 25px;
+}
+@media(min-width:480px) and (max-width:576px){
+    .our-menue .photo .ribbon{
+        left: 15%;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .our-menue .photo .ribbon{
+        left: 5%;
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    .our-menue .photo .ribbon{
+        left: 15%;
+    }
+}
+
+.our-menue .photo .ribbon::after{
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    right: -18px;
+    top: 0;
+    bottom: 0;
+}
+.our-menue .photo .primary::after {
+    border-color: #ef0031 transparent #ef0031 #ef0031;
+}
+.our-menue .photo .secondary{
+    background-color: #1F8330;
+}
+.our-menue .photo .secondary::after {
+    border-color: #1F8330 transparent #1F8330 #1F8330;
+}
+.ribbon h6{
+    color: #fff;
+    line-height: 20px;
+    font-size: 13px;
+}
+.our-menue .photo span{
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+}
+.our-menue .span-number{
+    font-weight: bold;
+}
+.color-primary {
+    color: #EF0031;
+}
+
+.our-menue .menue{
+    background: #F4F8F9;
+    padding: 40px 0;
+}
+
+.our-menue h2{
+    color: #333;
+    font-style: italic;
+}
+/* .our-menue .row img{
+    width: 100px;
+} */
+.our-menue .right p{
+    color: #555;
+}
+.our-menue .image , .right{
+    padding: 15px 10px;
+}
+.our-menue .image{
+    width: 20%;
+}
+.our-menue .right{
+    width: 80%;
+}
+.right h5 , p{
+    text-align: left;
+}
+
+.our-menue .trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+}
+
+.our-menue .rotate-trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    background-size: 26px 10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;
+}
+
+/* ****************** End Our-Menu ******************* */
+
+/* ****************** Start Add-Salad ******************* */
+.add-salad{
+    background-image: linear-gradient(rgba(0,0,0,.9) , rgba(0,0,0,.9)) , url('../images/sellers-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 0;
+}
+.add-salad h2{
+    color: #fff;
+}
+/* ****************** End Add-Salad ******************* */
+
+/* ****************** Start Menue-Pasta ******************* */
+.menue-pasta{
+    padding: 50px 0;
+    position: relative;
+}
+
+.menue-pasta .menue-pasta-one img{
+width: 200px;
+}
+.menue-pasta .menue-pasta-one .image{
+    width: 40%;
+}
+.menue-pasta .menue-pasta-one .right{
+    width: 60%;
+}
+.menue-pasta .menue-pasta-two img{
+    width: 100px;
+}
+
+hr{
+    background-color: #999;
+    height: 1px;
+} 
+
+.menue-pasta .right p{
+    color: #555;
+}
+.menue-pasta .menue-pasta-two .image , .right{
+    padding: 15px 10px;
+}
+.menue-pasta .menue-pasta-two .image{
+    width: 20%;
+}
+.menue-pasta .menue-pasta-two .right{
+    width: 80%;
+}
+.right h5 , p{
+    text-align: left;
+}
+
+.menue-pasta .trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+}
+.menue-pasta .rotate-trainagle {
+    background: url(../images/triangle_bg.png) repeat-x;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    background-size: 26px 10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;
+}
+/* ****************** End Menue-Pasta ******************* */
+
